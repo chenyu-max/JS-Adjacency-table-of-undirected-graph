@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>无向图邻接表</title>
+    <link rel="stylesheet" href="index.css">
+</head>
+
+<body>
+    <div class="input-wrapper">
+        <div class="choose">
+            <p>请选择您要构建的图类型</p>
+            <label for="undirected-graph">无向图</label>
+            <input type="radio" value="无向图" name="graph" id="undirected-graph" checked>
+            <label for="digraph">有向图</label>
+            <input type="radio" value="有向图" name="graph" id="digraph">
+            <br>
+            <p>
+                <label for="apex-num">顶点个数</label>
+                <input type="text" id="apex-num">
+            </p>
+            <p>
+                <label for="edge-num">边的个数</label>
+                <input type="text" id="edge-num">
+            </p>
+            <button>填写数据</button>
+        </div>
+        <div class="input-table">
+            <div class="row"></div>
+            <div class="row"></div>
+        </div>
+        <div class="create" style="display: none;">
+            <button>创建图</button>
+        </div>
+    </div>
+    <div class="output" style="display: none;"></div>
+    <div class="check" style="display: none;">
+        <label for="check-input">请输入相应图的边</label>
+        <input type="text" id="check-input">
+        <br>
+        <button style="margin: 10px auto">判断</button>
+    </div>
+    <script src="graph.js"></script>
+    <script src="index.js"></script>
+</body>
+
+</html>
